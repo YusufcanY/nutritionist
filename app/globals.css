@@ -3,11 +3,65 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --green-70: rgba(202, 234, 122, 1);
+  --green-75: rgba(211, 237, 144, 1);
+  --green-80: rgba(220, 241, 166, 1);
+  --green-85: rgba(228, 244, 188, 1);
+  --green-90: rgba(237, 248, 210, 1);
+  --green-95: rgba(246, 251, 233, 1);
+  --green-97: rgba(249, 252, 242, 1);
+  --green-99: rgba(253, 254, 250, 1);
+  --dark-green-15: rgba(26, 49, 41, 1);
+  --dark-green-20: rgba(35, 66, 55, 1);
+  --dark-green-25: rgba(43, 83, 69, 1);
+  --dark-green-30: rgba(52, 100, 83, 1);
+  --dark-green-40: rgba(69, 134, 113, 1);
+  --dark-green-60: rgba(121, 185, 163, 1);
+  --dark-green-80: rgba(188, 220, 209, 1);
+  --dark-green-90: rgba(221, 237, 232, 1);
+  --grey-10: rgba(25, 25, 25, 1);
+  --grey-15: rgba(38, 38, 38, 1);
+  --grey-20: rgba(51, 51, 51, 1);
+  --grey-30: rgba(76, 76, 76, 1);
+  --grey-35: rgba(88, 88, 89, 1);
+  --grey-40: rgba(100, 100, 103, 1);
+  --grey-60: rgba(151, 151, 154, 1);
+  --grey-90: rgba(230, 230, 230, 1);
+  --grey-95: rgba(242, 242, 242, 1);
+  --grey-97: rgba(247, 247, 247, 1);
+  --grey-99: rgba(252, 252, 252, 1);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-green-70: var(--green-70);
+  --color-green-75: var(--green-75);
+  --color-green-80: var(--green-80);
+  --color-green-85: var(--green-85);
+  --color-green-90: var(--green-90);
+  --color-green-95: var(--green-95);
+  --color-green-97: var(--green-97);
+  --color-green-99: var(--green-99);
+  --color-dark-green-15: var(--dark-green-15);
+  --color-dark-green-20: var(--dark-green-20);
+  --color-dark-green-25: var(--dark-green-25);
+  --color-dark-green-30: var(--dark-green-30);
+  --color-dark-green-40: var(--dark-green-40);
+  --color-dark-green-60: var(--dark-green-60);
+  --color-dark-green-80: var(--dark-green-80);
+  --color-dark-green-90: var(--dark-green-90);
+  --color-grey-10: var(--grey-10);
+  --color-grey-15: var(--grey-15);
+  --color-grey-20: var(--grey-20);
+  --color-grey-30: var(--grey-30);
+  --color-grey-35: var(--grey-35);
+  --color-grey-40: var(--grey-40);
+  --color-grey-60: var(--grey-60);
+  --color-grey-90: var(--grey-90);
+  --color-grey-95: var(--grey-95);
+  --color-grey-97: var(--grey-97);
+  --color-grey-99: var(--grey-99);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
