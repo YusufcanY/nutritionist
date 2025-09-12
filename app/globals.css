@@ -62,8 +62,7 @@
   --color-grey-95: var(--grey-95);
   --color-grey-97: var(--grey-97);
   --color-grey-99: var(--grey-99);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-urbanist);
 }
 
 @media (prefers-color-scheme: dark) {
