@@ -98,7 +98,7 @@ export default function Header() {
         </div>
       </div>
       <div className="bg-dark-green-15 border-t border-dark-green-20">
-        <div className="py-5 mobile:py-4 container flex justify-between items-center mx-auto">
+        <div className="desktop:py-5 py-4 container flex justify-between items-center mx-auto">
           <Link href="/">
             <Image
               src={isDesktop ? "/logo-desktop.svg" : "/logo-mobile.svg"}
