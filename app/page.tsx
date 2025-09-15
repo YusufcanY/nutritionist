@@ -1,3 +1,9 @@
+import Hero from "@/components/sections/home/Hero";
+
 export default function Home() {
-  return <main>tetete</main>;
+  return (
+    <main>
+      <Hero />
+    </main>
+  );
 }

@@ -9,6 +9,7 @@ import { cn, useIsDesktop, useIsMobile } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 import { MenuIcon, MenuIconHandle } from "./icons/Menu";
 import { AnimatePresence, motion } from "motion/react";
+import { Button } from "./ui/Button";
 
 export default function Header() {
   const arrowRightRef = useRef<ArrowRightIconHandle>(null);
@@ -120,9 +121,7 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <button className="py-3 px-4 desktop:px-6 desktop:py-3 bg-green-70 text-grey-15 rounded-md desktop:rounded-lg desktop:text-lg text-sm">
-              Contact Us
-            </button>
+            <Button>Contact Us</Button>
           </div>
           <div className="laptop:hidden flex">
             <button
