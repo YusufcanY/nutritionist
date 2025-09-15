@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { cn } from "@/lib/utils";
-import { motion } from "motion/react";
-import React, { useEffect, useId, useRef, useState } from "react";
+import { cn } from '@/lib/utils';
+import { motion } from 'motion/react';
+import React, { useEffect, useId, useRef, useState } from 'react';
 
 /**
  *  DotPattern Component Props
@@ -85,8 +85,8 @@ export function DotPattern({
     };
 
     updateDimensions();
-    window.addEventListener("resize", updateDimensions);
-    return () => window.removeEventListener("resize", updateDimensions);
+    window.addEventListener('resize', updateDimensions);
+    return () => window.removeEventListener('resize', updateDimensions);
   }, []);
 
   const dots = Array.from(
@@ -110,17 +110,17 @@ export function DotPattern({
   return (
     <svg
       ref={containerRef}
-      aria-hidden="true"
+      aria-hidden='true'
       className={cn(
-        "pointer-events-none absolute inset-0 h-full w-full text-neutral-400/80",
+        'pointer-events-none absolute inset-0 h-full w-full text-neutral-400/80',
         className
       )}
       {...props}
     >
       <defs>
         <radialGradient id={`${id}-gradient`}>
-          <stop offset="0%" stopColor="currentColor" stopOpacity="1" />
-          <stop offset="100%" stopColor="currentColor" stopOpacity="0" />
+          <stop offset='0%' stopColor='currentColor' stopOpacity='1' />
+          <stop offset='100%' stopColor='currentColor' stopOpacity='0' />
         </radialGradient>
       </defs>
       {dots.map((dot, index) => (
@@ -129,7 +129,7 @@ export function DotPattern({
           cx={dot.x}
           cy={dot.y}
           r={cr}
-          fill={glow ? `url(#${id}-gradient)` : "currentColor"}
+          fill={glow ? `url(#${id}-gradient)` : 'currentColor'}
           initial={glow ? { opacity: 0.4, scale: 1 } : {}}
           animate={
             glow
@@ -144,9 +144,9 @@ export function DotPattern({
               ? {
                   duration: dot.duration,
                   repeat: Infinity,
-                  repeatType: "reverse",
+                  repeatType: 'reverse',
                   delay: dot.delay,
-                  ease: "easeInOut",
+                  ease: 'easeInOut',
                 }
               : {}
           }
