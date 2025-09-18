@@ -17,7 +17,7 @@ export default function FeatureCard({
   return (
     <div
       className={cn(
-        'rounded-lg border border-green-85 bg-green-95 p-6 laptop:p-8 desktop:rounded-xl desktop:p-10',
+        'h-full rounded-lg border border-green-85 bg-green-95 p-6 laptop:p-8 desktop:rounded-xl desktop:p-10',
         className
       )}
     >

@@ -1,11 +1,9 @@
-'use client';
-
 import { Button } from '@/components/ui/Button';
 import { DotPattern } from '@/components/ui/DotPattern';
 import { Highlighter } from '@/components/ui/Highlighter';
 import { TextAnimate } from '@/components/ui/TextAnimate';
 import { cn } from '@/lib/utils';
-import { motion } from 'motion/react';
+import * as motion from 'motion/react-client';
 import Image from 'next/image';
 
 export default function Hero() {

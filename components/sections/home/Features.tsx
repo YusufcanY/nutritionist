@@ -7,6 +7,7 @@ import {
   Utensils,
 } from 'lucide-react';
 import FeatureCard from './FeatureCard';
+import * as motion from 'motion/react-client';
 
 export default function Features() {
   const features = [
@@ -50,16 +51,33 @@ export default function Features() {
   return (
     <section>
       <div className='container mx-auto'>
-        <h2 className='text-center text-3xl font-bold text-grey-15 laptop:text-4xl desktop:text-5xl'>
+        <motion.h2
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          className='text-center text-3xl font-bold text-grey-15 laptop:text-4xl desktop:text-5xl'
+        >
           Features
-        </h2>
-        <p className='text-center text-sm font-medium text-grey-20 laptop:text-base desktop:text-lg'>
+        </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          className='text-center text-sm font-medium text-grey-20 laptop:text-base desktop:text-lg'
+        >
           Welcome to the Feature Section of Nutritionist, your ultimate
           destination for all things nutrition and wellness.
-        </p>
+        </motion.p>
         <div className='mt-12 grid grid-cols-1 gap-4 laptop:mt-20 laptop:grid-cols-2 desktop:gap-8'>
-          {features.map(feature => (
-            <FeatureCard key={feature.title} {...feature} />
+          {features.map((feature, index) => (
+            <motion.div
+              key={feature.title}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: index * 0.1 }}
+            >
+              <FeatureCard key={feature.title} {...feature} />
+            </motion.div>
           ))}
         </div>
       </div>
