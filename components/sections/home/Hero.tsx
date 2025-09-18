@@ -34,7 +34,7 @@ export default function Hero() {
               src='/hero-section-woman.png'
               alt='Hero'
               fill
-              objectFit='contain'
+              className='object-contain'
             />
           </motion.div>
         </div>
