@@ -28,7 +28,7 @@ export default function BlogCard({
   return (
     <div
       className={cn(
-        'group overflow-hidden rounded-lg border border-green-85 bg-green-95 p-6 transition-all duration-300 hover:shadow-md laptop:p-7 desktop:rounded-xl desktop:p-10',
+        'group h-full overflow-hidden rounded-lg border border-green-85 bg-green-95 p-6 transition-all duration-300 hover:shadow-md laptop:p-7 desktop:rounded-xl desktop:p-10',
         className
       )}
     >

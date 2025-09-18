@@ -1,4 +1,5 @@
 import BlogCard from './BlogCard';
+import * as motion from 'motion/react-client';
 
 export default function Blogs() {
   const blogs = [
@@ -67,7 +68,12 @@ export default function Blogs() {
   return (
     <section>
       <div className='container mx-auto'>
-        <div className='mb-12 text-center laptop:mb-20'>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          className='mb-12 text-center laptop:mb-20'
+        >
           <h2 className='mb-4 text-3xl font-bold text-grey-15 laptop:text-4xl desktop:text-5xl'>
             Our Blogs
           </h2>
@@ -76,11 +82,18 @@ export default function Blogs() {
             written by our team of nutritionists, dietitians, and wellness
             experts. Here&apos;s what you can expect from our blog.
           </p>
-        </div>
+        </motion.div>
 
         <div className='grid grid-cols-1 gap-6 laptop:grid-cols-2 desktop:gap-8'>
           {blogs.map((blog, index) => (
-            <BlogCard key={index} {...blog} />
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: index * 0.1 }}
+            >
+              <BlogCard key={index} {...blog} />
+            </motion.div>
           ))}
         </div>
       </div>
