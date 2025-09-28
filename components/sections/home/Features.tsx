@@ -54,6 +54,7 @@ export default function Features() {
         <motion.h2
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.3 }}
           className='text-center text-3xl font-bold text-grey-15 laptop:text-4xl desktop:text-5xl'
         >
@@ -62,6 +63,7 @@ export default function Features() {
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.3 }}
           className='text-center text-sm font-medium text-grey-20 laptop:text-base desktop:text-lg'
         >
@@ -74,6 +76,7 @@ export default function Features() {
               key={feature.title}
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
             >
               <FeatureCard key={feature.title} {...feature} />
