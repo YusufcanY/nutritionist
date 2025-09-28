@@ -73,13 +73,14 @@
 
 @utility container {
   max-width: 358px;
-
+  padding-inline: 1rem;
   @variant laptop {
-    padding-inline: 1rem;
+    padding-inline: 0;
     max-width: 1280px;
   }
 
   @variant desktop {
+    padding-inline: 0;
     max-width: 1596px;
   }
 }
