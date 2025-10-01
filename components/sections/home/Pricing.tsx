@@ -38,6 +38,7 @@ export default function Pricing() {
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
+          viewport={{ once: true }}
           className='text-center text-3xl font-bold text-grey-15 laptop:text-4xl desktop:text-5xl'
         >
           Our Pricing
@@ -46,6 +47,7 @@ export default function Pricing() {
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
+          viewport={{ once: true }}
           className='text-center text-sm font-medium text-grey-20 laptop:text-base desktop:text-lg'
         >
           We outline our flexible and affordable options to support you on your
