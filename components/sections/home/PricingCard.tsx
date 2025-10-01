@@ -22,9 +22,6 @@ export function PricingCard({ index, plan, isYearly }: PricingCardProps) {
         <h3 className='text-xl font-semibold text-grey-15 laptop:text-2xl desktop:text-3xl'>
           {plan.title}
         </h3>
-        <p className='text-sm font-medium text-grey-30 laptop:text-base desktop:text-lg'>
-          {plan.subtitle}
-        </p>
       </div>
 
       <p className='mb-6 text-sm text-grey-15 laptop:text-base desktop:text-lg'>

@@ -11,7 +11,6 @@ export default function Pricing() {
   const plans: Plan[] = [
     {
       title: 'Basic Plan',
-      subtitle: 'Up to 50% off on Yearly Plan',
       description:
         'Get started on your health journey with our Basic Plan. It includes personalized nutrition coaching, access to our app, meal planning assistance, and email support.',
       monthlyPrice: '49',
@@ -19,7 +18,6 @@ export default function Pricing() {
     },
     {
       title: 'Premium Plan',
-      subtitle: 'Up to 50% off on Yearly Plan',
       description:
         "Upgrade to our Premium Plan for enhanced features. In addition to the Basic Plan, you'll receive video consultations, priority support, and personalized recipe recommendations.",
       monthlyPrice: '79',
@@ -27,7 +25,6 @@ export default function Pricing() {
     },
     {
       title: 'Ultimate Plan',
-      subtitle: 'Up to 50% off on Yearly Plan',
       description:
         'Experience the full benefits of personalized nutrition coaching with our Ultimate Plan. Enjoy all the features of the Premium Plan, along with 24/7 chat support and exclusive workshops.',
       monthlyPrice: '99',
