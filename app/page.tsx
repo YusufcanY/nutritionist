@@ -3,7 +3,6 @@ import Features from '@/components/sections/home/Features';
 import Testimonials from '@/components/sections/home/Testimonials';
 import Blogs from '@/components/sections/home/Blogs';
 import Pricing from '@/components/sections/home/Pricing';
-import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -15,7 +14,6 @@ export default function Home() {
         <Testimonials />
         <Pricing />
       </main>
-      <Footer />
     </>
   );
 }
