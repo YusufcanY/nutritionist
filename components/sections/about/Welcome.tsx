@@ -1,5 +1,5 @@
 import { RippleBackground } from '@/components/ui/RippleBackground';
-import Image from 'next/image';
+import Logo from '@/components/icons/Logo';
 
 export default function Welcome() {
   return (
@@ -8,15 +8,8 @@ export default function Welcome() {
         <div className='mt-8 mb-12 grid h-[106px] grid-cols-6 grid-rows-2 gap-1 laptop:my-20 laptop:h-[412px] laptop:gap-2.5 desktop:my-24 desktop:h-[518px] desktop:gap-5'>
           <div className='col-span-1 row-span-1 h-full w-full rounded-sm bg-[#DCF1A7] laptop:rounded-lg'></div>
           <div className='col-span-1 row-span-1 h-full w-full rounded-sm bg-[#DCF1A7] laptop:rounded-lg'></div>
-          <div className='relative col-span-2 row-span-2 flex h-full w-full items-center justify-center overflow-hidden rounded-sm bg-[#DCF1A7] laptop:rounded-lg'>
-            <Image
-              src='/abstract-2.svg'
-              alt='abstract logo'
-              width={0}
-              height={0}
-              sizes='50vw'
-              className='h-auto w-1/2'
-            />
+          <div className='relative col-span-2 row-span-2 flex h-full w-full items-center justify-center overflow-hidden rounded-sm bg-[#DCF1A7] text-gray-600 laptop:rounded-lg'>
+            <Logo className='h-auto w-1/2 text-[#1A3129]' />
             <RippleBackground className='hidden laptop:block' />
             <RippleBackground
               className='block laptop:hidden'
