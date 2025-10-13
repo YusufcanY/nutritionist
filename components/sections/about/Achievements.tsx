@@ -2,8 +2,6 @@ import { ClipboardList, HeartPlus, Medal, TrendingUp } from 'lucide-react';
 import FeatureCard from '../home/FeatureCard';
 import * as motion from 'motion/react-client';
 import { Button } from '@/components/ui/Button';
-import Image from 'next/image';
-import Logo from '@/components/icons/Logo';
 import PageFooter from '@/components/PageFooter';
 
 export default function Achievements() {
