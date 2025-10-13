@@ -84,6 +84,10 @@
   }
 }
 
+@utility no-scrollbar {
+  @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
+}
+
 @utility container {
   max-width: 358px;
   padding-inline: 1rem;
