@@ -22,6 +22,7 @@ export default function Footer() {
     {
       type: 'email',
       value: 'hello@squareup.com',
+      link: 'mailto:hello@squareup.com',
       icon: (
         <svg
           width='20'
@@ -51,6 +52,7 @@ export default function Footer() {
     {
       type: 'phone',
       value: '+91 91813 23 2309',
+      link: 'tel:+91 91813 23 2309',
       icon: (
         <svg
           width='20'
@@ -73,6 +75,7 @@ export default function Footer() {
     {
       type: 'location',
       value: 'Somewhere in the World',
+      link: 'https://maps.app.goo.gl/H1JWT2goYpah3hoj8',
       icon: (
         <svg
           width='20'
@@ -133,15 +136,18 @@ export default function Footer() {
           <div className='flex flex-col items-center justify-between gap-5 rounded-lg border border-dark-green-25 bg-dark-green-20 p-5 laptop:flex-row laptop:px-4 laptop:py-3.5 desktop:px-5 desktop:py-4'>
             <div className='flex w-full flex-col items-center justify-between gap-4 laptop:w-auto laptop:flex-row laptop:items-center laptop:justify-between desktop:gap-5'>
               {contactInfo.map(contact => (
-                <div
+                <Link
                   key={contact.type}
+                  href={contact.link}
+                  target='_blank'
+                  rel='noopener noreferrer'
                   className='flex w-full items-center justify-center space-x-3 rounded-sm border border-dark-green-25 px-4 py-3 laptop:w-auto desktop:rounded-md'
                 >
                   <span className='text-green-70'>{contact.icon}</span>
                   <span className='text-sm font-medium text-white'>
                     {contact.value}
                   </span>
-                </div>
+                </Link>
               ))}
             </div>
 
