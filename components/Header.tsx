@@ -36,6 +36,7 @@ export default function Header() {
               <div className='absolute -bottom-1/2 left-0 -translate-x-1/2'>
                 <Image
                   src='/abstract-1.svg'
+                  priority
                   alt='abstract'
                   width={144}
                   height={74}
@@ -44,6 +45,7 @@ export default function Header() {
               <div className='absolute right-0 -bottom-1/2 translate-x-1/2'>
                 <Image
                   src='/abstract-1.svg'
+                  priority
                   alt='abstract'
                   width={144}
                   height={74}
@@ -79,6 +81,7 @@ export default function Header() {
                 <div className='absolute top-1/2 left-8 -translate-y-1/2'>
                   <Image
                     src='/abstract-1.svg'
+                    priority
                     alt='abstract'
                     width={195}
                     height={100}
@@ -87,6 +90,7 @@ export default function Header() {
                 <div className='absolute top-1/2 right-8 -translate-y-1/2'>
                   <Image
                     src='/abstract-1.svg'
+                    priority
                     alt='abstract'
                     width={195}
                     height={100}
@@ -104,6 +108,7 @@ export default function Header() {
             <Image
               src={isDesktop ? '/logo-desktop.svg' : '/logo-mobile.svg'}
               alt='logo'
+              priority
               width={isDesktop ? 195 : 147}
               height={isDesktop ? 45 : 34}
             />

@@ -31,6 +31,7 @@ export default function Hero() {
             <Image
               src='/hero-section-woman.png'
               alt='Hero'
+              priority
               fill
               className='object-contain'
             />

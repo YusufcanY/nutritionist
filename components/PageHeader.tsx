@@ -35,6 +35,7 @@ export default function PageHeader({
         <Image
           src='/abstract-3.svg'
           alt='abstract'
+          priority
           width={800}
           height={200}
           className='absolute top-0 left-1/2 -translate-x-1/2'
