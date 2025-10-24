@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Logo from '@/components/icons/Logo';
 import { cn } from '@/lib/utils';
 import * as motion from 'motion/react-client';
+
 export default function PageHeader({
   title,
   description,

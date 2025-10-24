@@ -6,6 +6,7 @@ import TeamCard from '@/components/sections/team/TeamCard';
 import { AnimatedBackground } from '@/components/ui/AnimatedBackground';
 import { Button } from '@/components/ui/Button';
 import { useState } from 'react';
+import * as motion from 'motion/react-client';
 
 export default function Team() {
   const sectors = [
@@ -15,8 +16,7 @@ export default function Team() {
     'Marketing and Communications',
     'Technology and Development',
   ];
-  const [selectedSector, setSelectedSector] =
-    useState<string>('Management Team');
+  const [, setSelectedSector] = useState<string>('Management Team');
   const team = [
     {
       name: 'Sarah Mitchell',
@@ -72,7 +72,13 @@ export default function Team() {
             </AnimatedBackground>
           </div>
         </PageHeader>
-        <div className='grid grid-cols-1 gap-16 laptop:grid-cols-4 laptop:gap-5 desktop:gap-8'>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.3 }}
+          className='grid grid-cols-1 gap-16 laptop:grid-cols-4 laptop:gap-5 desktop:gap-8'
+        >
           {team.map(member => (
             <TeamCard
               key={member.name}
@@ -81,7 +87,7 @@ export default function Team() {
               image={member.image}
             />
           ))}
-        </div>
+        </motion.div>
         <PageFooter
           title='Join Our Team'
           description='We are always on the lookout for talented individuals who are enthusiastic about making a difference. Explore our career opportunities and join us in our mission to help people achieve their health and wellness goals.'
