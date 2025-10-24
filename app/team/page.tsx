@@ -77,7 +77,7 @@ export default function Team() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.3 }}
-          className='grid grid-cols-1 gap-16 laptop:grid-cols-4 laptop:gap-5 desktop:gap-8'
+          className='grid grid-cols-1 gap-16 pb-12 laptop:grid-cols-4 laptop:gap-5 laptop:pb-24 desktop:gap-8 desktop:pb-36'
         >
           {team.map(member => (
             <TeamCard
