@@ -67,7 +67,7 @@ export default function Header() {
                 size={isDesktop ? 24 : 20}
               />
               <span className='text-sm font-medium laptop:text-base desktop:text-lg'>
-                Join Our Personalized Nutrition Demo For Free
+                Join Our Personalized Nutrition Demo
               </span>
               <ArrowRightIcon
                 ref={arrowRightRef}
