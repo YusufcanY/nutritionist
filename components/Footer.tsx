@@ -2,11 +2,10 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useIsDesktop, useIsMobile } from '@/lib/utils';
+import { useIsDesktop } from '@/lib/utils';
 
 export default function Footer() {
   const isDesktop = useIsDesktop();
-  const isMobile = useIsMobile();
 
   const navigationLinks = [
     { href: '/', label: 'Home' },
