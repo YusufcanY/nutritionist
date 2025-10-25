@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/Button';
 import { SlidingNumber } from '@/components/ui/SlidingNumber';
 import { Plan } from '@/lib/types/pricing';
+import { ShoppingBasket, ShoppingCart } from 'lucide-react';
 import * as motion from 'motion/react-client';
 
 interface PricingCardProps {
@@ -18,15 +19,33 @@ export function PricingCard({ index, plan, isYearly }: PricingCardProps) {
       transition={{ duration: 0.3, delay: index * 0.1 }}
       className='rounded-lg border border-green-90 bg-green-95 p-8 laptop:p-10 desktop:rounded-xl desktop:p-12'
     >
-      <div className='mb-4'>
+      <div>
         <h3 className='text-xl font-semibold text-grey-15 laptop:text-2xl desktop:text-3xl'>
           {plan.title}
         </h3>
       </div>
 
-      <p className='mb-6 text-sm text-grey-15 laptop:text-base desktop:text-lg'>
-        {plan.description}
-      </p>
+      {typeof plan.description === 'string' ? (
+        <p className='my-6 text-sm text-grey-15 laptop:my-8 laptop:text-base desktop:my-10 desktop:text-lg'>
+          {plan.description}
+        </p>
+      ) : (
+        <ul className='my-6 list-none divide-y divide-green-85 rounded-md border border-green-85 bg-green-90 laptop:my-8 laptop:rounded-lg desktop:my-10 desktop:rounded-xl'>
+          {plan.description.map((item, index) => (
+            <li
+              key={index}
+              className='text-medium px-4 py-3.5 text-sm text-grey-20 laptop:px-5 laptop:py-4 laptop:text-base desktop:px-6 desktop:py-5 desktop:text-lg'
+            >
+              {item}
+            </li>
+          ))}
+        </ul>
+      )}
+      {plan.extra && (
+        <div className='my-6 rounded-md bg-dark-green-20 px-4 py-3.5 text-sm text-white laptop:my-8 laptop:rounded-lg laptop:px-5 laptop:py-4 laptop:text-base desktop:my-10 desktop:rounded-xl desktop:px-6 desktop:py-5 desktop:text-lg'>
+          {plan.extra}
+        </div>
+      )}
 
       <div className='mb-6'>
         <div className='flex items-center gap-1'>
@@ -40,7 +59,12 @@ export function PricingCard({ index, plan, isYearly }: PricingCardProps) {
         </div>
       </div>
 
-      <Button className='w-full'>Choose Plan</Button>
+      <Button className='group w-full gap-0'>
+        <span className='transition-transform group-hover:-translate-x-1'>
+          Choose Plan
+        </span>
+        <ShoppingCart className='size-5 opacity-0 transition-all group-hover:translate-x-1 group-hover:opacity-100' />
+      </Button>
     </motion.div>
   );
 }
