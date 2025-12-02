@@ -90,17 +90,17 @@ export default function Hero() {
           >
             <div className='flex rounded-full border-2 border-green-70 bg-white p-1.5'>
               <img
-                src='https://static.vecteezy.com/system/resources/previews/029/245/100/non_2x/photorealistic-image-of-a-beautiful-dark-skinned-african-american-woman-on-a-yellow-background-young-woman-smiling-ai-generated-photo.jpg'
+                src='/customer/customer-3.jpg'
                 alt='person'
                 className='size-10 rounded-full desktop:size-12'
               />
               <img
-                src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4sCPHb8mnqfWVwsyyoztRg1HupvQ4qUvxVDC37e6Ymo8SyIxz'
+                src='/customer/customer-2.jpeg'
                 alt='person'
                 className='-ml-4 size-10 rounded-full desktop:size-12'
               />
               <img
-                src='https://cdn.prod.website-files.com/6470f3b555598689d525b4ad/6470f3b655598689d525b5c9_image-03.jpg'
+                src='/customer/customer-1.jpg'
                 alt='person'
                 className='-ml-4 size-10 rounded-full desktop:size-12'
               />
